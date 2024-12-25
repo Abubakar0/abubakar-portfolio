@@ -120,31 +120,6 @@ export class ProjectsComponent implements OnInit {
       Technologies: ["WordPress"],
     },
     {
-      Title: "Kilo Game",
-      Description:
-        "This Danish gaming store is powered by WordPress with WooCommerce for e-commerce functionality, offering gaming products and accessories.",
-      imgs: ["assets/images/kilo_game.png"],
-      demoLink: "https://kilogame.dk",
-      Technologies: ["WordPress", "WooCommerce"],
-    },
-    {
-      Title: "Ace Biomed",
-      Description:
-        "Ace Biomed Lab utilizes WordPress, focusing on medical and diagnostic services. It features sections for services, contact forms, and laboratory test bookings.",
-      imgs: ["assets/images/acebio.png"],
-      demoLink: "https://www.acebiomedlab.com.ng",
-      Technologies: ["WordPress"],
-    },
-
-    {
-      Title: "Solar Choice",
-      Description:
-        "SolarChoice is built on WordPress, featuring renewable energy solutions with sections for service details and customer inquiries.",
-      imgs: ["assets/images/acebio.png"],
-      demoLink: "https://solarchoice.se",
-      Technologies: ["WordPress"],
-    },
-    {
       Title: "Visit Clothing",
       Description:
         "1Hub Fashion uses WooCommerce for its online store, offering various fashion products with integrated payment gateways and product management.",
@@ -153,12 +128,37 @@ export class ProjectsComponent implements OnInit {
       Technologies: ["WordPress", "WooCommerce"],
     },
     {
+      Title: "Kilo Game",
+      Description:
+        "This Danish gaming store is powered by WordPress with WooCommerce for e-commerce functionality, offering gaming products and accessories.",
+      imgs: ["assets/images/kilo_game.png"],
+      demoLink: "https://kilogame.dk",
+      Technologies: ["WordPress", "WooCommerce"],
+    },
+
+    {
+      Title: "Ace Biomed",
+      Description:
+        "Ace Biomed Lab utilizes WordPress, focusing on medical and diagnostic services. It features sections for services, contact forms, and laboratory test bookings.",
+      imgs: ["assets/images/acebio.png"],
+      demoLink: "https://www.acebiomedlab.com.ng",
+      Technologies: ["WordPress"],
+    },
+    {
       Title: "Visit Cosmetics",
       Description:
         "Visit Cosmetics an E-commerce Store, Selling beauty products specifically in Pakistan.",
       imgs: ["assets/images/visit_cos.png"],
       demoLink: "https://www.visitcosmetics.com",
       Technologies: ["WordPress", "WooCommerce"],
+    },
+    {
+      Title: "Solar Choice",
+      Description:
+        "SolarChoice is built on WordPress, featuring renewable energy solutions with sections for service details and customer inquiries.",
+      imgs: ["assets/images/solar_choice.png"],
+      demoLink: "https://solarchoice.se",
+      Technologies: ["WordPress"],
     },
   ];
 
