@@ -1,0 +1,58 @@
+@import "./../../../../variables.scss";
+
+.section.skills {
+  padding: 4rem 0;
+  .skills-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    .big-title {
+      font-size: 60px;
+      line-height: 1.1;
+      margin: 0 !important;
+      font-weight: 600;
+      color: $LightestSlate;
+      margin: 0 0 10px 0;
+      font-family: $MainFont;
+    }
+    .skills-subtitle {
+      color: $Green;
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      font-family: $CodeFont;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+  }
+  .skills-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .skill-card {
+    background: #112240;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    .skill-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #97ca55;
+    }
+    .skill-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #ccd6f6;
+    }
+    .skill-description {
+      color: #a8b2d1;
+      font-size: 1rem;
+    }
+  }
+}

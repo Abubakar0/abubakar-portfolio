@@ -1,0 +1,141 @@
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-box">
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="section-title">
+          <span class="n-section-title">03.</span>
+          Industrial Projects
+        </h3>
+      </div>
+
+      <div
+        *ngFor="let project of featureProjects; let i = index"
+        class="d-flex project-container"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <owl-carousel-o class="owl-carousel-o" [options]="customOptions">
+          <ng-container *ngFor="let img of project.imgs">
+            <ng-template carouselSlide [id]="project.Title + i">
+              <div class="img-container">
+                <img
+                  class="img-feature-project rounded"
+                  [src]="img"
+                  [alt]="project.Title"
+                />
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+
+        <div
+          class="img-feature-project-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="img-feature-project-box">
+            <div class="img-container" style="width: auto">
+              <img
+                class="img-feature-project rounded"
+                [src]="project.imgs[0]"
+                [alt]="project.imgs[0]"
+                width="600px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          [class.project-info-right]="i % 2 == 0"
+          [class.project-info-left]="i % 2 != 0"
+          class="h-100"
+          [ngStyle]="{ 'background-image': 'url(' + project.img + ')' }"
+        >
+          <div class="project-box pl-3">
+            <h4
+              [class.text-right]="i % 2 == 0"
+              [class.text-left]="i % 2 != 0"
+              class="feature-project"
+            >
+              {{ project.Role }}
+            </h4>
+            <h5
+              [class.text-right]="i % 2 == 0"
+              [class.text-left]="i % 2 != 0"
+              class="project-name"
+            >
+              {{ project.Title }}
+            </h5>
+
+            <div class="project-description-box" (click)="debug()">
+              <p class="mb-0" [innerHTML]="project.Description"></p>
+            </div>
+
+            <ul
+              [class.justify-content-end]="i % 2 == 0"
+              [class.justify-content-start]="i % 2 != 0"
+              class="project-skills"
+            >
+              <li *ngFor="let technology of project.Technologies" class="ml-3">
+                <span class="underline technology">{{ technology }}</span>
+              </li>
+              <li>
+                <a
+                  *ngIf="project.Link"
+                  style="color: inherit"
+                  [href]="project.Link"
+                  target="_blank"
+                  ><i class="ml-3 fas fa-external-link-alt"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section more-projects">
+  <div class="container">
+    <div class="section-box">
+      <div class="">
+        <h3 class="section-title">
+          <span class="n-section-title">04.</span>
+          Wordpress Projects
+        </h3>
+      </div>
+      <div class="mt-5">
+        <div class="row p-0">
+          <div
+            *ngFor="let project of moreProjects; let i = index"
+            (click)="redirect(project.demoLink, $event)"
+            class="col-12 col-md-6 col-lg-6 col-xl-4 project-col"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="more-project-box">
+              <div class="row w-100 text-left m-0 p-0">
+                <div class="col-6 p-0">
+                  <img [src]="project.imgs[0]" width="300" />
+                </div>
+                <div class="col-6 d-flex p-0 justify-content-end"></div>
+                <h5 class="other-project-title mt-4">{{ project.Title }}</h5>
+                <p class="other-project-description">
+                  {{ project.Description }}
+                </p>
+              </div>
+              <div>
+                <ul class="more-projects-skills">
+                  <li *ngFor="let technology of project.Technologies">
+                    <span class="underline">{{ technology }}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
