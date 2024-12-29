@@ -122,7 +122,7 @@ export class ProjectsComponent implements OnInit {
     {
       Title: "Visit Clothing",
       Description:
-        "1Hub Fashion uses WooCommerce for its online store, offering various fashion products with integrated payment gateways and product management.",
+        "Visit Clothing uses WooCommerce for its online store, offering various fashion products with integrated payment gateways and product management.",
       imgs: ["assets/images/visit.png"],
       demoLink: "https://visitclothing.com/",
       Technologies: ["WordPress", "WooCommerce"],
